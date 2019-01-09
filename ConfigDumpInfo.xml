@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.7">
+	<ConfigVersions>
+		<Metadata name="CommonModule.IIKOДокументы" id="856d7404-c2a6-416c-9c28-94220dcf9a41" configVersion="ecd1f5b7a816704eb60fd5648a3a5d2a00000000"/>
+		<Metadata name="CommonModule.IIKOДокументы.Module" id="856d7404-c2a6-416c-9c28-94220dcf9a41.0" configVersion="2393dc6742e8214a9fd8199d6004921c00000000"/>
+		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="ca4687086a496042afabb3afc0274c1100000000"/>
+		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="1d130d4a4b49c049b144fc7bdad142b200000000"/>
+		<Metadata name="CommonModule.ОбработкаДанных" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f" configVersion="c4b543a59826b94aa8ebf1240897f9a000000000"/>
+		<Metadata name="CommonModule.ОбработкаДанных.Module" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f.0" configVersion="c5e69417fb087844ae8ee6012f28c46100000000"/>
+		<Metadata name="Configuration.IziCloudIIKO" id="61ab6ade-ced6-4443-9906-d34524eef6f9" configVersion="6f7f767d61265d4dbf4dbdc1a5b9b36d00000000"/>
+		<Metadata name="Configuration.IziCloudIIKO.ParentConfigurations" id="e0141920-8582-4e89-84dc-11aa604f20a6.4" configVersion="fa19aacd56dd004783702371bb9ba65c00000000"/>
+		<Metadata name="HTTPService.v1" id="18b1b13e-1080-4122-b093-b7f48b1272d3" configVersion="5003c62136a11a4f823d83356c4ad91c00000000">
+			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод.Method.ВыполнитьМетодGET" id="92096bc8-376e-4b7f-a5d0-0ee9216a311d"/>
+			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод.Method.ВыполнитьМетодPOST" id="d6d1dfdf-844e-48f3-80c1-a8a3ebb00de2"/>
+			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод" id="fc05920f-e530-4e66-9f69-b8fcc7af33f6"/>
+		</Metadata>
+		<Metadata name="HTTPService.v1.Module" id="18b1b13e-1080-4122-b093-b7f48b1272d3.0" configVersion="a167523fbc99114aa324e3e5805f763b00000000"/>
+		<Metadata name="Language.Русский" id="ced6d723-b092-4956-9d64-86088802bd5b" configVersion="ad41679350490041b585be3a7c3ec90300000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
