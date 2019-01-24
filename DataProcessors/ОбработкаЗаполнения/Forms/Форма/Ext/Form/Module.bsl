@@ -48,8 +48,8 @@
 	ЗапросКАйко = Новый Структура(Поля, "select max(revision) as res from entity", "res");
 	ЗапросыКАйко.Вставить("НомерОбъекта", ЗапросКАйко);
 	
-	ЗапросКАйко = Новый Структура(Поля, "select serverversion from dbversion", "serverversion");	
-	ЗапросыКАйко.Вставить("Версия", ЗапросКАйко);
+	ЗапросКАйко = Новый Структура(Поля, "SELECT dbVendor FROM DBVersion", "dbVendor");	
+	ЗапросыКАйко.Вставить("ТипСУБД", ЗапросКАйко);
 	
 	ЗапросКАйко = Новый Структура(Поля, "select id, 
 	|"+XML(ТипБД, "/r/departmentId")+" as code,
