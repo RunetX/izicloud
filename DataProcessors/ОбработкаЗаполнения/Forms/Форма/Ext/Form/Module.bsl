@@ -40,107 +40,98 @@
 КонецФункции
 
 &НаКлиенте
-Функция ПолучитьЗапросыКАйко(ТипБД)
-	ЗапросыКАйко = Новый Соответствие;
-	
+Процедура ДобавитьЗапросКАйко(ЗапросыКАйко, СтрокаЗапроса)
 	Поля = "Текст, СтрокаПолей";
+	ПараметрыСтрокиЗапроса = СтрРазделить(СтрокаЗапроса, ";");
+	КлючЗапроса = ПараметрыСтрокиЗапроса[0];
+	ЗапросыКАйко.Вставить(КлючЗапроса, Новый Структура(Поля, ПараметрыСтрокиЗапроса[1], ПараметрыСтрокиЗапроса[2]));
+КонецПроцедуры
+
+&НаКлиенте
+Функция ПолучитьЗапросыКАйко(ТипБД)
+	ЗапросыКАйко = Новый Соответствие;	
 	
-	ЗапросКАйко = Новый Структура(Поля, "select max(revision) as res from entity", "res");
-	ЗапросыКАйко.Вставить("НомерОбъекта", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "НомерОбъекта;select max(revision) as res from entity;res");	
 	
-	ЗапросКАйко = Новый Структура(Поля, "SELECT dbVendor FROM DBVersion", "dbVendor");	
-	ЗапросыКАйко.Вставить("ТипСУБД", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ТипСУБД;select dbVendor from DBVersion;dbVendor");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id, 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "Справочники;select id,type,xml from entity where type in ([entity_types]);id,type,xml");
+	
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "Подразделения;select id, 
 	|"+XML(ТипБД, "/r/departmentId")+" as code,
-	|"+XML(ТипБД, "/r/name")+" as name from entity where type = 'Department'", "id,code,name");
-	ЗапросыКАйко.Вставить("Подразделения", ЗапросКАйко);
+	|"+XML(ТипБД, "/r/name")+" as name from entity where type = 'Department';id,code,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id, 
-	|"+XML(ТипБД, "/r/type")+			" as type,
-	|"+XML(ТипБД, "/r/num")+			" as vcode, 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "Номенклатура;select id, 
+	|"+XML(ТипБД, "/r/type")+			 " as type,
+	|"+XML(ТипБД, "/r/num")+			 " as vcode, 
 	|"+XML(ТипБД, "/r/name/customValue")+" as name,
-	|"+XML(ТипБД, "/r/parent")+			" as parent,
-	|"+XML(ТипБД, "/r/mainUnit")+		" as unit
-	|from entity where type = 'Product' and deleted = '0'", "id,type,vcode,name,parent,unit");
-	ЗапросыКАйко.Вставить("Номенклатура", ЗапросКАйко);
+	|"+XML(ТипБД, "/r/parent")+			 " as parent,
+	|"+XML(ТипБД, "/r/mainUnit")+		 " as unit
+	|from entity where type = 'Product' and deleted = '0';id,type,vcode,name,parent,unit");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id,
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ГруппыНоменклатуры;select id,
 	|"+XML(ТипБД, "/r/num")+			 " as code,
 	|"+XML(ТипБД, "/r/parent")+			 " as parent,
 	|"+XML(ТипБД, "/r/name/customValue")+" as name
-	|from entity where type = 'ProductGroup' and deleted = '0'", "id,code,parent,name");
-	ЗапросыКАйко.Вставить("ГруппыНоменклатуры", ЗапросКАйко);
+	|from entity where type = 'ProductGroup' and deleted = '0';id,code,parent,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id, 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "Склады;select id, 
 	|"+XML(ТипБД, "/r/code")+" as code,
-	|"+XML(ТипБД, "/r/name/customValue")+" as name from entity where type = 'Store'", "id,code,name");
-	ЗапросыКАйко.Вставить("Склады", ЗапросКАйко);
+	|"+XML(ТипБД, "/r/name/customValue")+" as name from entity where type = 'Store';id,code,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id from entity where type = 'Store' 
-	|and "+XML(ТипБД, "/r/code",,Истина)+" = '"+CV(ТипБД, "[store_code]")+"'", "id");
-	ЗапросыКАйко.Вставить("ИдСкладаПоКоду", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ИдСкладаПоКоду;select id from entity where type = 'Store' 
+	|and "+XML(ТипБД, "/r/code",,Истина)+" = '"+CV(ТипБД, "[store_code]")+"';id");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id, 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ЕдиницыИзмерения;select id, 
 	|"+XML(ТипБД, "/r/name/customValue")+" as name 
-	|from entity where type = 'MeasureUnit'", "id,name");
-	ЗапросыКАйко.Вставить("ЕдиницыИзмерения", ЗапросКАйко);
+	|from entity where type = 'MeasureUnit';id,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id from entity where type = 'Product'
-	|and "+XML(ТипБД, "/r/num",,Истина)+" = '"+CV(ТипБД, "[product_code]")+"'", "id");
-	ЗапросыКАйко.Вставить("ИдТовараПоАртикулу", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ИдТовараПоАртикулу;select id from entity where type = 'Product'
+	|and "+XML(ТипБД, "/r/num",,Истина)+" = '"+CV(ТипБД, "[product_code]")+"';id");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id, 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ИдКодИмяТовараПоАртикулу;select id, 
 	|"+XML(ТипБД, "/r/num")+" as vcode, 
 	|"+XML(ТипБД, "/r/name/customValue")+" as name from entity where type = 'Product'
-	|and "+XML(ТипБД, "/r/num",,Истина)+" = '"+CV(ТипБД, "[product_code]")+"'", "id,vcode,name");
-	ЗапросыКАйко.Вставить("ИдКодИмяТовараПоАртикулу", ЗапросКАйко);
+	|and "+XML(ТипБД, "/r/num",,Истина)+" = '"+CV(ТипБД, "[product_code]")+"';id,vcode,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "КодИмяТовараПоИд;select 
 	|"+XML(ТипБД, "/r/num")+" as vcode, 
 	|"+XML(ТипБД, "/r/name/customValue")+" as name from entity where type = 'Product' 
-	| and id = '[product_id]'", "vcode,name");
-	ЗапросыКАйко.Вставить("КодИмяТовараПоИд", ЗапросКАйко);
+	| and id = '[product_id]';vcode,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id from entity where type = 'ProductGroup'
-	| and "+XML(ТипБД, "/r/num",,Истина)+" = '"+CV(ТипБД, "[pgroup_code]")+"'", "id");
-	ЗапросыКАйко.Вставить("ИдГруппыНоменклатурыПоКоду", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ИдГруппыНоменклатурыПоКоду;select id from entity where type = 'ProductGroup'
+	| and "+XML(ТипБД, "/r/num",,Истина)+" = '"+CV(ТипБД, "[pgroup_code]")+"';id");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id, 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "Поставщики;select id, 
 	|"+XML(ТипБД, "/r/code")+" as vendor_code, 
 	|"+XML(ТипБД, "/r/name/customValue")+" as name
-	|from entity where type = 'User' and "+XML(ТипБД, "/r/supplier", "5", Истина)+" = '"+CV(ТипБД, "true")+"'", 
-	"id,vendor_code,name");
-	ЗапросыКАйко.Вставить("Поставщики", ЗапросКАйко);
+	|from entity where type = 'User' and "+XML(ТипБД, "/r/supplier", "5", Истина)+" = '"+CV(ТипБД, "true")+"';id,vendor_code,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id from entity where type = 'User' 
-	|and "+XML(ТипБД, "/r/code",,Истина)+" = '"+CV(ТипБД, "[vendor_code]")+"'", "id");
-	ЗапросыКАйко.Вставить("ИдПоставщикаПоКоду", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ИдПоставщикаПоКоду;select id from entity where type = 'User' 
+	|and "+XML(ТипБД, "/r/code",,Истина)+" = '"+CV(ТипБД, "[vendor_code]")+"';id");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select 
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ВидыОплаты;select 
 	|"+XML(ТипБД, "/r/localId")+" as code, 
 	|"+XML(ТипБД, "/r/name/customValue")+" as name
-	|from entity where type = 'NonCashPaymentType'", "code,name");
-	ЗапросыКАйко.Вставить("ВидыОплаты", ЗапросКАйко);
+	|from entity where type = 'NonCashPaymentType';code,name");
 	
-	ЗапросКАйко = Новый Структура(Поля, "select id,
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "СтатьиРасходов;select id,
 	|"+XML(ТипБД, "/r/name/customValue")+" as name
 	|from entity where type = 'Account' and
 	|("+XML(ТипБД, "/r/type",,Истина)+"= '"+CV(ТипБД, "OTHER_EXPENSES")+
-	"' or "+XML(ТипБД, "/r/type",,Истина)+" = '"+CV(ТипБД, "COST_OF_GOODS_SOLD")+"')", "name");
-	ЗапросыКАйко.Вставить("СтатьиРасходов", ЗапросКАйко);
+	"' or "+XML(ТипБД, "/r/type",,Истина)+" = '"+CV(ТипБД, "COST_OF_GOODS_SOLD")+"');name");
 	
 	Если ТипБД = "MS" Тогда
-		ЗапросКАйко = Новый Структура(Поля, "select id from [doc_type] where documentNumber='[doc_number]'
+		СтрокаЗапроса = "select id from [doc_type] where documentNumber='[doc_number]'
 		| and (dateCreated >= convert(datetime,'[year]-01-01 00:00:00.000', 120)
-		| and  dateCreated <= convert(datetime,'[year]-12-31 23:59:59.999', 120))", "id");
-	Иначе	
-		ЗапросКАйко = Новый Структура(Поля, "select id from [doc_type] where documentNumber='[doc_number]'
-		| and dateCreated >= '[year]-01-01 00:00:00.000' and  dateCreated <= '[year]-12-31 23:59:59.999'", "id");
+		| and  dateCreated <= convert(datetime,'[year]-12-31 23:59:59.999', 120))";	
+	Иначе
+		СтрокаЗапроса = "select id from [doc_type] where documentNumber='[doc_number]'
+		| and dateCreated >= '[year]-01-01 00:00:00.000' and  dateCreated <= '[year]-12-31 23:59:59.999'"
 	КонецЕсли;
-	ЗапросыКАйко.Вставить("ИдДокументаПоКоду", ЗапросКАйко);
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "ИдДокументаПоКоду;"+СтрокаЗапроса+";id");
 	
-	Возврат ЗапросыКАйко; 
+	Возврат ЗапросыКАйко;
 КонецФункции
 
 &НаСервере
