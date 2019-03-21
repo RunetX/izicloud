@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.7">
 	<ConfigVersions>
-		<Metadata name="CommonModule.IIKOДокументы" id="856d7404-c2a6-416c-9c28-94220dcf9a41" configVersion="c218464b501d804fbcc23d3ade83856400000000"/>
-		<Metadata name="CommonModule.IIKOДокументы.Module" id="856d7404-c2a6-416c-9c28-94220dcf9a41.0" configVersion="6c39dd346474ab4fa27331d05177052a00000000"/>
-		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="3df0fe8587e25841b838426263c4e87d00000000"/>
-		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="5b5e44372529174ba436752e2f11646b00000000"/>
-		<Metadata name="CommonModule.ОбработкаДанных" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f" configVersion="1e49c4fcaebd714da42ca57da184597f00000000"/>
-		<Metadata name="CommonModule.ОбработкаДанных.Module" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f.0" configVersion="ee4c05701b89e54cbe6dfca296fee7c300000000"/>
+		<Metadata name="CommonModule.IIKOДокументы" id="856d7404-c2a6-416c-9c28-94220dcf9a41" configVersion="15eadfecb6e79441b725ad6d109d2f3d00000000"/>
+		<Metadata name="CommonModule.IIKOДокументы.Module" id="856d7404-c2a6-416c-9c28-94220dcf9a41.0" configVersion="fbe709c3f0a6214bbf1cbe66dfc1faae00000000"/>
+		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="664796598e4b31418af6a6b0e55b600b00000000"/>
+		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="8495fd1e31ab5b46864e115de94d3b6100000000"/>
+		<Metadata name="CommonModule.ОбработкаДанных" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f" configVersion="4b19ff277f8d1e469970af396557e62e00000000"/>
+		<Metadata name="CommonModule.ОбработкаДанных.Module" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f.0" configVersion="d54bfc35fced3640b3144e54ee0a0c8500000000"/>
 		<Metadata name="Configuration.IziCloudIIKO" id="61ab6ade-ced6-4443-9906-d34524eef6f9" configVersion="9fff489bcf63b74b8529cf5be6533a6e00000000"/>
 		<Metadata name="Configuration.IziCloudIIKO.ParentConfigurations" id="e0141920-8582-4e89-84dc-11aa604f20a6.4" configVersion="983eb56552caf94795e04f5f09965bb200000000"/>
 		<Metadata name="DataProcessor.ОбработкаЗаполнения" id="d722416d-d055-4da5-a6a7-f72561744997" configVersion="077a8b788fb0884e9c665d5be3810d2c00000000"/>
 		<Metadata name="DataProcessor.ОбработкаЗаполнения.Form.Форма" id="b4b2cd0b-918e-44f5-ad01-2353899034cc" configVersion="44b7bab1cbcd2c40a989007a457f07cb00000000"/>
 		<Metadata name="DataProcessor.ОбработкаЗаполнения.Form.Форма.Form" id="b4b2cd0b-918e-44f5-ad01-2353899034cc.0" configVersion="cf340a28ba26f54da5a8f52c5940dab900000000"/>
-		<Metadata name="HTTPService.v1" id="18b1b13e-1080-4122-b093-b7f48b1272d3" configVersion="746ad1054188e94ab863888a8eca45e100000000">
+		<Metadata name="HTTPService.v1" id="18b1b13e-1080-4122-b093-b7f48b1272d3" configVersion="2babf1f53ae272458dc5cf5f576eba9f00000000">
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод.Method.ВыполнитьМетодGET" id="92096bc8-376e-4b7f-a5d0-0ee9216a311d"/>
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод.Method.ВыполнитьМетодPOST" id="d6d1dfdf-844e-48f3-80c1-a8a3ebb00de2"/>
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод" id="fc05920f-e530-4e66-9f69-b8fcc7af33f6"/>
 		</Metadata>
-		<Metadata name="HTTPService.v1.Module" id="18b1b13e-1080-4122-b093-b7f48b1272d3.0" configVersion="85d14d45bd202f4da3252471a1b5310a00000000"/>
+		<Metadata name="HTTPService.v1.Module" id="18b1b13e-1080-4122-b093-b7f48b1272d3.0" configVersion="47560aee3993a14591c9b14a5253ce9900000000"/>
 		<Metadata name="InformationRegister.IIKOSQLЗапросы" id="d0286d08-f3dc-472b-9a67-98684e6e9d0b" configVersion="7c21342fad04a6468de88550a7e8027500000000">
 			<Metadata name="InformationRegister.IIKOSQLЗапросы.Dimension.ТипЗапроса" id="1b5bde0e-1144-4b80-ad36-dc25de54b380"/>
 			<Metadata name="InformationRegister.IIKOSQLЗапросы.Resource.Поля" id="23271bf1-abc9-4f09-bb4d-e1db88efff95"/>
