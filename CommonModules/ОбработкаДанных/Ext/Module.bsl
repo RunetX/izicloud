@@ -268,3 +268,21 @@
 		Возврат Неопределено;
 	КонецПопытки;	
 КонецФункции
+
+Функция ПолучитьHTTPЗаголовки(РазмерФайлаОтправки, П) Экспорт
+	
+	ЗаголовкиHTTP = Новый Соответствие();
+	ЗаголовкиHTTP.Вставить("Content-Type", "text/xml");
+	ЗаголовкиHTTP.Вставить("X-Resto-LoginName", П.IIKO_LOGIN);
+	ЗаголовкиHTTP.Вставить("X-Resto-PasswordHash", П.IIKO_PASS);
+	ЗаголовкиHTTP.Вставить("X-Resto-BackVersion", П.version);
+	ЗаголовкиHTTP.Вставить("X-Resto-AuthType", "BACK");
+	ЗаголовкиHTTP.Вставить("X-Resto-ServerEdition", П.IIKO_BACK_TYPE);
+	ЗаголовкиHTTP.Вставить("Accept-Language", "ru");
+	ЗаголовкиHTTP.Вставить("Content-Length", РазмерФайлаОтправки);
+	ЗаголовкиHTTP.Вставить("Expect", "100-continue");
+	ЗаголовкиHTTP.Вставить("Accept-Encoding", "gzip");
+	ЗаголовкиHTTP.Вставить("Connection", "Close");
+	
+	Возврат ЗаголовкиHTTP;
+КонецФункции
