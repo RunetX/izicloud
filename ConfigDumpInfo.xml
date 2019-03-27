@@ -3,8 +3,8 @@
 	<ConfigVersions>
 		<Metadata name="CommonModule.IIKOДокументы" id="856d7404-c2a6-416c-9c28-94220dcf9a41" configVersion="c43e530509788049b7b20ab76be929c400000000"/>
 		<Metadata name="CommonModule.IIKOДокументы.Module" id="856d7404-c2a6-416c-9c28-94220dcf9a41.0" configVersion="3b0d8c43414c5b478c17f0c9cbfbb6c900000000"/>
-		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="7cd3837a98d38342b7873adaaa72359d00000000"/>
-		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="28820543b6a9b546930e09b857d3d7d500000000"/>
+		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="f5a0047f7c222c42a389f89c6172981900000000"/>
+		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="582420a88358fd43a6b75e9ef33fdbdc00000000"/>
 		<Metadata name="CommonModule.ОбработкаДанных" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f" configVersion="0c6d2263fe990347a1af98b1c980fba700000000"/>
 		<Metadata name="CommonModule.ОбработкаДанных.Module" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f.0" configVersion="20bf8f51f75acf47bf21a1dae5163e6200000000"/>
 		<Metadata name="Configuration.IziCloudIIKO" id="61ab6ade-ced6-4443-9906-d34524eef6f9" configVersion="9fff489bcf63b74b8529cf5be6533a6e00000000"/>
