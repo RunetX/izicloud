@@ -1,0 +1,33 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iikopackage" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="productType_enum" base="xs:string" variety="Atomic">
+		<enumeration>GOODS</enumeration>
+		<enumeration>DISH</enumeration>
+		<enumeration>PREPARED</enumeration>
+		<enumeration>SERVICE</enumeration>
+		<enumeration>MODIFIER</enumeration>
+		<enumeration>OUTER</enumeration>
+		<enumeration>PETROL</enumeration>
+		<enumeration>RATE</enumeration>
+	</valueType>
+	<objectType name="args">
+		<property name="entities_version" type="xs:decimal" lowerBound="0" localName="entities-version"/>
+		<property name="client_type" type="xs:string" lowerBound="0" localName="client-type"/>
+		<property name="enable_warnings" type="xs:boolean" lowerBound="0" localName="enable-warnings"/>
+		<property name="request_watchdog_check_results" type="xs:boolean" lowerBound="0" localName="request-watchdog-check-results"/>
+		<property xmlns:d3p1="https://izi.cloud/iikopackage" name="product" type="d3p1:product" lowerBound="0"/>
+		<property name="overrideFastCode" type="xs:boolean" lowerBound="0"/>
+		<property name="overrideCode" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="product">
+		<property name="eid" type="xs:string" lowerBound="0" form="Attribute"/>
+		<property name="mainUnit" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iikopackage" name="type" type="d3p1:productType_enum"/>
+		<property name="num" type="xs:string"/>
+		<property name="parent" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iikopackage" name="name" type="d3p1:productName"/>
+		<property name="id" type="xs:string"/>
+	</objectType>
+	<objectType name="productName">
+		<property name="customValue" type="xs:string"/>
+	</objectType>
+</package>
