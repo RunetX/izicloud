@@ -142,6 +142,7 @@
 			<CommonModule>IIKOДокументы</CommonModule>
 			<CommonModule>IIKOСправочники</CommonModule>
 			<XDTOPackage>IIKOПакет</XDTOPackage>
+			<XDTOPackage>IIKOОбъект</XDTOPackage>
 			<HTTPService>v1</HTTPService>
 			<DataProcessor>ОбработкаЗаполнения</DataProcessor>
 			<InformationRegister>IIKOSQLЗапросы</InformationRegister>

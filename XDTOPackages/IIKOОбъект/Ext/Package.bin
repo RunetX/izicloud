@@ -1,0 +1,24 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iikoentity" elementFormQualified="true" attributeFormQualified="false">
+	<property name="id" type="xs:string"/>
+	<property name="query" type="xs:string"/>
+	<property name="resultSet">
+		<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+			<property xmlns:d4p1="https://izi.cloud/iikoentity" ref="d4p1:row" lowerBound="0" upperBound="-1"/>
+		</typeDef>
+	</property>
+	<property name="root">
+		<typeDef xsi:type="ObjectType">
+			<property xmlns:d4p1="https://izi.cloud/iikoentity" ref="d4p1:query"/>
+			<property xmlns:d4p1="https://izi.cloud/iikoentity" ref="d4p1:resultSet"/>
+		</typeDef>
+	</property>
+	<property name="row">
+		<typeDef xsi:type="ObjectType">
+			<property xmlns:d4p1="https://izi.cloud/iikoentity" ref="d4p1:id"/>
+			<property xmlns:d4p1="https://izi.cloud/iikoentity" ref="d4p1:type"/>
+			<property xmlns:d4p1="https://izi.cloud/iikoentity" ref="d4p1:xml"/>
+		</typeDef>
+	</property>
+	<property name="type" type="xs:string"/>
+	<property name="xml" type="xs:string"/>
+</package>

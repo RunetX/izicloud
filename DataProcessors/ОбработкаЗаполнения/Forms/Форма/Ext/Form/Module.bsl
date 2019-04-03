@@ -55,7 +55,8 @@
 	
 	ДобавитьЗапросКАйко(ЗапросыКАйко, "ТипСУБД;select dbVendor from DBVersion;dbVendor");
 	
-	ДобавитьЗапросКАйко(ЗапросыКАйко, "Справочники;select id,type,xml from entity where type in ([entity_types]);id,type,xml");
+	ДобавитьЗапросКАйко(ЗапросыКАйко, "Справочники;select id,type,xml from entity where type in ([entity_types]) 
+	|and deleted = '0';id,type,xml");
 	
 	ДобавитьЗапросКАйко(ЗапросыКАйко, "Подразделения;select id, 
 	|"+XML(ТипБД, "/r/departmentId")+" as code,
