@@ -1,0 +1,6 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://lemma.ru/iiko/creating/nextNumber" elementFormQualified="true" attributeFormQualified="false">
+	<objectType name="args">
+		<property name="enable_warnings" type="xs:boolean" lowerBound="0" fixed="false" default="false" localName="enable-warnings"/>
+		<property name="documentType" type="xs:string"/>
+	</objectType>
+</package>

@@ -1,0 +1,27 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iiko/create/dish" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="refType" base="xs:string" variety="Atomic" length="36"/>
+	<objectType name="args">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="product" type="d3p1:dishType"/>
+		<property name="overrideCode" type="xs:boolean"/>
+		<property name="overrideFastCode" type="xs:boolean"/>
+	</objectType>
+	<objectType name="dishType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="eid" type="d3p1:refType" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="mainUnit" type="d3p1:refType" lowerBound="0"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="placeType" type="d3p1:refType"/>
+		<property name="type" type="xs:string" fixed="false" default="DISH"/>
+		<property name="unitWeght" type="xs:decimal" lowerBound="0"/>
+		<property name="unitCapacity" type="xs:decimal" lowerBound="0"/>
+		<property name="isCalculateUnitWeight" type="xs:boolean"/>
+		<property name="useBalanceForSell" type="xs:boolean"/>
+		<property name="description" type="xs:string"/>
+		<property name="num" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="parent" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="accountingCategory" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="name" type="d3p1:nameType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/dish" name="id" type="d3p1:refType"/>
+	</objectType>
+	<objectType name="nameType">
+		<property name="customValue" type="xs:string"/>
+	</objectType>
+</package>

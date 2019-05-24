@@ -1,0 +1,47 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iiko/create/salesDocument" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="refType" base="xs:string" variety="Atomic" length="36"/>
+	<objectType name="args">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="document" type="d3p1:documentType"/>
+	</objectType>
+	<objectType name="documentType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="eid" type="d3p1:refType" lowerBound="1" form="Attribute"/>
+		<property name="cls" type="xs:string" lowerBound="0" fixed="false" default="SalesDocument" form="Attribute"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="revenueAccount" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="revenueDebitAccount" type="d3p1:refType" lowerBound="0"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="accountTo" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="discountsAccount" type="d3p1:refType" lowerBound="0"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="defaultStore" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="items" type="d3p1:itemsType"/>
+		<property name="dateIncoming" type="xs:string"/>
+		<property name="documentNumber" type="xs:string"/>
+		<property name="status" type="xs:string"/>
+		<property name="comment" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="conception" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="id" type="d3p1:refType"/>
+	</objectType>
+	<objectType name="iType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="eid" type="d3p1:refType" lowerBound="1" form="Attribute"/>
+		<property name="cls" type="xs:string" lowerBound="0" fixed="false" default="SalesDocument" form="Attribute"/>
+		<property name="num" type="xs:decimal"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="store" type="d3p1:refType" lowerBound="0"/>
+		<property name="code" type="xs:string"/>
+		<property name="price" type="xs:decimal" lowerBound="0"/>
+		<property name="sum" type="xs:decimal" lowerBound="0"/>
+		<property name="ndsPercent" type="xs:decimal" lowerBound="0"/>
+		<property name="sumWithoutNds" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="amountUnit" type="d3p1:refType"/>
+		<property name="amount" type="xs:decimal"/>
+		<property name="amountFactor" type="xs:decimal"/>
+		<property name="discountSum" type="xs:decimal"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="invoice" type="d3p1:invoiceType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="product" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="id" type="d3p1:refType"/>
+	</objectType>
+	<objectType name="invoiceType">
+		<property name="cls" type="xs:string" lowerBound="0" fixed="false" default="SalesDocument" form="Attribute"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="eid" type="d3p1:refType" lowerBound="1" form="Attribute"/>
+	</objectType>
+	<objectType name="itemsType" ordered="false" sequenced="true">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/salesDocument" name="i" type="d3p1:iType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>

@@ -1,0 +1,21 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iiko/create/service" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="refType" base="xs:string" variety="Atomic" length="36"/>
+	<objectType name="args">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="product" type="d3p1:productType"/>
+		<property name="overrideFastCode" type="xs:boolean" fixed="false" default="false"/>
+		<property name="overrideCode" type="xs:boolean" fixed="false" default="false"/>
+	</objectType>
+	<objectType name="nameType">
+		<property name="customValue" type="xs:string"/>
+	</objectType>
+	<objectType name="productType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="eid" type="d3p1:refType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="mainUnit" type="d3p1:refType"/>
+		<property name="type" type="xs:string" fixed="false" default="SERVICE"/>
+		<property name="num" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="parent" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="accountingCategory" type="d3p1:refType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="name" type="d3p1:nameType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/service" name="id" type="d3p1:refType"/>
+	</objectType>
+</package>

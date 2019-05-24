@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.7">
 	<ConfigVersions>
-		<Metadata name="CommonModule.IIKOДокументы" id="856d7404-c2a6-416c-9c28-94220dcf9a41" configVersion="c43e530509788049b7b20ab76be929c400000000"/>
-		<Metadata name="CommonModule.IIKOДокументы.Module" id="856d7404-c2a6-416c-9c28-94220dcf9a41.0" configVersion="3b0d8c43414c5b478c17f0c9cbfbb6c900000000"/>
-		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="0538a39e32477e4e9d3a67f72894808200000000"/>
-		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="6444554e02975d4793531edc13b3ef8700000000"/>
-		<Metadata name="CommonModule.ОбработкаДанных" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f" configVersion="0c6d2263fe990347a1af98b1c980fba700000000"/>
-		<Metadata name="CommonModule.ОбработкаДанных.Module" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f.0" configVersion="20bf8f51f75acf47bf21a1dae5163e6200000000"/>
-		<Metadata name="Configuration.IziCloudIIKO" id="61ab6ade-ced6-4443-9906-d34524eef6f9" configVersion="79487ff1a7391d44be7242d8f374932200000000"/>
-		<Metadata name="Configuration.IziCloudIIKO.ParentConfigurations" id="e0141920-8582-4e89-84dc-11aa604f20a6.4" configVersion="983eb56552caf94795e04f5f09965bb200000000"/>
-		<Metadata name="DataProcessor.ОбработкаЗаполнения" id="d722416d-d055-4da5-a6a7-f72561744997" configVersion="077a8b788fb0884e9c665d5be3810d2c00000000"/>
-		<Metadata name="DataProcessor.ОбработкаЗаполнения.Form.Форма" id="b4b2cd0b-918e-44f5-ad01-2353899034cc" configVersion="ed3e488eb09af94b9ab4c9d932aea3f100000000"/>
-		<Metadata name="DataProcessor.ОбработкаЗаполнения.Form.Форма.Form" id="b4b2cd0b-918e-44f5-ad01-2353899034cc.0" configVersion="5a38f72c9e985f49bc2822e229e33a6c00000000"/>
-		<Metadata name="HTTPService.v1" id="18b1b13e-1080-4122-b093-b7f48b1272d3" configVersion="e63e58d20099af43a4e9ec485f1fff6000000000">
+		<Metadata name="CommonModule.IIKOДокументы" id="856d7404-c2a6-416c-9c28-94220dcf9a41" configVersion="ffc50794340051459c0eb4591e17bb4300000000"/>
+		<Metadata name="CommonModule.IIKOДокументы.Module" id="856d7404-c2a6-416c-9c28-94220dcf9a41.0" configVersion="df96d06b7167ab4c8874de0cae544b2c00000000"/>
+		<Metadata name="CommonModule.IIKOСправочники" id="f0a3827c-dbe2-4da9-9697-74b404c2457f" configVersion="502eea2340f37f4ea91351381a7cc53800000000"/>
+		<Metadata name="CommonModule.IIKOСправочники.Module" id="f0a3827c-dbe2-4da9-9697-74b404c2457f.0" configVersion="e20fe54b517c7349b0702b95013dee7400000000"/>
+		<Metadata name="CommonModule.ОбработкаДанных" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f" configVersion="6f3fe4c16c3bc54aa37b51a5e183771a00000000"/>
+		<Metadata name="CommonModule.ОбработкаДанных.Module" id="8f97de24-21b0-4104-bf49-3be59e6d0f0f.0" configVersion="6113b38808d4e74581849778d81891a000000000"/>
+		<Metadata name="Configuration.IziCloudIIKO" id="61ab6ade-ced6-4443-9906-d34524eef6f9" configVersion="c169fdde90de7a4d90ff3394050297b600000000"/>
+		<Metadata name="Configuration.IziCloudIIKO.ParentConfigurations" id="e0141920-8582-4e89-84dc-11aa604f20a6.4" configVersion="396d9f4158c2a048a82882570b535a4300000000"/>
+		<Metadata name="DataProcessor.ОбработкаЗаполнения" id="d722416d-d055-4da5-a6a7-f72561744997" configVersion="857f0cb724bda646a0b7b41a98246a9b00000000"/>
+		<Metadata name="DataProcessor.ОбработкаЗаполнения.Form.Форма" id="b4b2cd0b-918e-44f5-ad01-2353899034cc" configVersion="7c0e28322abf224f9548e5e38a4cfff200000000"/>
+		<Metadata name="DataProcessor.ОбработкаЗаполнения.Form.Форма.Form" id="b4b2cd0b-918e-44f5-ad01-2353899034cc.0" configVersion="3d13e0c57a7dc244a998d29a82742e1500000000"/>
+		<Metadata name="HTTPService.v1" id="18b1b13e-1080-4122-b093-b7f48b1272d3" configVersion="af526e007a6ada4398aa783e38a45b5400000000">
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод.Method.GET" id="92096bc8-376e-4b7f-a5d0-0ee9216a311d"/>
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетодСПараметрами.Method.POST" id="b11342fd-020d-4f1e-b20b-66852865a1ea"/>
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод.Method.POST" id="d6d1dfdf-844e-48f3-80c1-a8a3ebb00de2"/>
@@ -20,17 +20,43 @@
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетодСПараметрами.Method.GET" id="e66ab238-abde-4784-87d2-3d172ae0f192"/>
 			<Metadata name="HTTPService.v1.URLTemplate.ВыполнитьМетод" id="fc05920f-e530-4e66-9f69-b8fcc7af33f6"/>
 		</Metadata>
-		<Metadata name="HTTPService.v1.Module" id="18b1b13e-1080-4122-b093-b7f48b1272d3.0" configVersion="9921c1f4fafa104e9b428c3b52ba9bcd00000000"/>
-		<Metadata name="InformationRegister.IIKOSQLЗапросы" id="d0286d08-f3dc-472b-9a67-98684e6e9d0b" configVersion="7c21342fad04a6468de88550a7e8027500000000">
+		<Metadata name="HTTPService.v1.Module" id="18b1b13e-1080-4122-b093-b7f48b1272d3.0" configVersion="9e7423462b74eb4abae6dd7931b28b8a00000000"/>
+		<Metadata name="InformationRegister.IIKOSQLЗапросы" id="d0286d08-f3dc-472b-9a67-98684e6e9d0b" configVersion="0d916d7e2675144b8bbd666fdd72bca400000000">
 			<Metadata name="InformationRegister.IIKOSQLЗапросы.Dimension.ТипЗапроса" id="1b5bde0e-1144-4b80-ad36-dc25de54b380"/>
 			<Metadata name="InformationRegister.IIKOSQLЗапросы.Resource.Поля" id="23271bf1-abc9-4f09-bb4d-e1db88efff95"/>
 			<Metadata name="InformationRegister.IIKOSQLЗапросы.Dimension.ТипБД" id="74fe0a7b-15b7-40e2-8202-aa8839abeff2"/>
 			<Metadata name="InformationRegister.IIKOSQLЗапросы.Resource.Текст" id="932434f7-93bb-4fd1-9935-828bc9408bad"/>
 		</Metadata>
-		<Metadata name="Language.Русский" id="ced6d723-b092-4956-9d64-86088802bd5b" configVersion="ad41679350490041b585be3a7c3ec90300000000"/>
-		<Metadata name="XDTOPackage.IIKOОбъект" id="dd0b8139-0a6f-4b30-9094-b5017845f018" configVersion="1efc1d5ae5dacb4fa5309dce046cc53f00000000"/>
-		<Metadata name="XDTOPackage.IIKOОбъект.Package" id="dd0b8139-0a6f-4b30-9094-b5017845f018.0" configVersion="c6d9e5e342dc9342a43fd5b49c1ab83f00000000"/>
-		<Metadata name="XDTOPackage.IIKOПакет" id="ec88d5a9-fd5f-45d5-8db3-92602d1adb99" configVersion="ce69176bba246e4f9514e65136f9aa3c00000000"/>
-		<Metadata name="XDTOPackage.IIKOПакет.Package" id="ec88d5a9-fd5f-45d5-8db3-92602d1adb99.0" configVersion="a1b287433984294eae6fa277d9a1dada00000000"/>
+		<Metadata name="Language.Русский" id="ced6d723-b092-4956-9d64-86088802bd5b" configVersion="a8ce83db9d9ab1419a127c6183ff97df00000000"/>
+		<Metadata name="XDTOPackage.IIKOОбъект" id="dd0b8139-0a6f-4b30-9094-b5017845f018" configVersion="0b376203e3154b4f9c49d7a2af0e7ec800000000"/>
+		<Metadata name="XDTOPackage.IIKOОбъект.Package" id="dd0b8139-0a6f-4b30-9094-b5017845f018.0" configVersion="92dc0cdb7c43f444a1880ea4e26392d800000000"/>
+		<Metadata name="XDTOPackage.IIKOПакет" id="ec88d5a9-fd5f-45d5-8db3-92602d1adb99" configVersion="52508526074eec4b9e2d6a8d402ff20300000000"/>
+		<Metadata name="XDTOPackage.IIKOПакет.Package" id="ec88d5a9-fd5f-45d5-8db3-92602d1adb99.0" configVersion="f76d976fbe3f5b44ac7bf31b6b05398000000000"/>
+		<Metadata name="XDTOPackage.ascAssemblyChart" id="0bf9c32d-d15b-4bb3-9c8c-5c934da0171a" configVersion="5ca566507b060445b9388724572efe6000000000"/>
+		<Metadata name="XDTOPackage.ascAssemblyChart.Package" id="0bf9c32d-d15b-4bb3-9c8c-5c934da0171a.0" configVersion="109cfad305f1dc4ba164944c6e3b24ba00000000"/>
+		<Metadata name="XDTOPackage.docIncomingInvoice" id="32ccd900-6511-4f80-955d-c413384c38bd" configVersion="749ae36595438b43a262363cbd9e3cda00000000"/>
+		<Metadata name="XDTOPackage.docIncomingInvoice.Package" id="32ccd900-6511-4f80-955d-c413384c38bd.0" configVersion="6abdfffcc96a4149a874f138e44288ac00000000"/>
+		<Metadata name="XDTOPackage.docSalesDocument" id="b872fb13-8c35-4b04-bf56-b66233867e94" configVersion="990d6ed5d9f101438c44c9d3275f331600000000"/>
+		<Metadata name="XDTOPackage.docSalesDocument.Package" id="b872fb13-8c35-4b04-bf56-b66233867e94.0" configVersion="6f990f34ae508f4fbe0e02532a0bc69300000000"/>
+		<Metadata name="XDTOPackage.docWriteoffDocument" id="aaf21468-7986-4a01-b3fe-cf151d39e5fd" configVersion="9bdf5d8b1deed44ea17aa044218d7fd200000000"/>
+		<Metadata name="XDTOPackage.docWriteoffDocument.Package" id="aaf21468-7986-4a01-b3fe-cf151d39e5fd.0" configVersion="c79c8fa41ddeb1489370e8d7e4b849a400000000"/>
+		<Metadata name="XDTOPackage.entDish" id="eb5f7d4d-24f9-4457-9b60-d7d12f259db0" configVersion="d4105bac11e12644bab05757e5982be200000000"/>
+		<Metadata name="XDTOPackage.entDish.Package" id="eb5f7d4d-24f9-4457-9b60-d7d12f259db0.0" configVersion="62188d56a5d3704293fe71f686d2c4c300000000"/>
+		<Metadata name="XDTOPackage.entProduct" id="e9da0e12-3cc5-4a1c-a11f-2c5959679da6" configVersion="f55593fb174c3c44acb1f70d9905f2ac00000000"/>
+		<Metadata name="XDTOPackage.entProduct.Package" id="e9da0e12-3cc5-4a1c-a11f-2c5959679da6.0" configVersion="bfde091cb24ee1408b79bb3dcf7ad92300000000"/>
+		<Metadata name="XDTOPackage.entProductGroup" id="ae5fe027-1082-4e2c-89fe-874abe7753d6" configVersion="0b08117b0b1a6e448eab36974db1a75200000000"/>
+		<Metadata name="XDTOPackage.entProductGroup.Package" id="ae5fe027-1082-4e2c-89fe-874abe7753d6.0" configVersion="02b3dfe769184443b78e08241c9a739c00000000"/>
+		<Metadata name="XDTOPackage.entService" id="b0e57be2-8104-4c4a-b7ed-0da7301accb7" configVersion="ea43ac8de5fd96479acbfc77cf110cba00000000"/>
+		<Metadata name="XDTOPackage.entService.Package" id="b0e57be2-8104-4c4a-b7ed-0da7301accb7.0" configVersion="7f9bd63759963d4d89ee38fb224f5e5500000000"/>
+		<Metadata name="XDTOPackage.entStore" id="30d93fdd-8e98-4e31-9664-52501ebb8bb8" configVersion="39da57784b165c499297623b6b06e4c500000000"/>
+		<Metadata name="XDTOPackage.entStore.Package" id="30d93fdd-8e98-4e31-9664-52501ebb8bb8.0" configVersion="8599fc9fcb3ced4faf0a582d04f5261c00000000"/>
+		<Metadata name="XDTOPackage.entSupplier" id="cee4bb88-f4f1-4ad5-a5a5-9d9b9669f41c" configVersion="eaf7074bc91f174cac856b557d66530d00000000"/>
+		<Metadata name="XDTOPackage.entSupplier.Package" id="cee4bb88-f4f1-4ad5-a5a5-9d9b9669f41c.0" configVersion="13c92a0428cb08489b19867c38c51f2d00000000"/>
+		<Metadata name="XDTOPackage.srvAnswer" id="fa1c25e4-c7a4-4c2d-aae7-e21a52df132c" configVersion="8647484b941f78469e13073ca7e898a100000000"/>
+		<Metadata name="XDTOPackage.srvAnswer.Package" id="fa1c25e4-c7a4-4c2d-aae7-e21a52df132c.0" configVersion="f1915d3e0cad484eae38ff7de906364800000000"/>
+		<Metadata name="XDTOPackage.srvNextNumber" id="7546fcde-5147-4abf-977f-196943e1269b" configVersion="1b710bfdf6f48844893f0e973b5d111200000000"/>
+		<Metadata name="XDTOPackage.srvNextNumber.Package" id="7546fcde-5147-4abf-977f-196943e1269b.0" configVersion="78edb940eea00e4086a33ce242e9df4b00000000"/>
+		<Metadata name="XDTOPackage.srvSQLAnswer" id="a442e8af-46fb-4a5a-ae05-6e2ce19c53ab" configVersion="03e8c24964f3b345bda75ce24e1dacd000000000"/>
+		<Metadata name="XDTOPackage.srvSQLAnswer.Package" id="a442e8af-46fb-4a5a-ae05-6e2ce19c53ab.0" configVersion="2ca7c33f359a1547ae34271a75439cf100000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

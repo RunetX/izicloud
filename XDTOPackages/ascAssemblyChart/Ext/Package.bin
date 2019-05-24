@@ -1,0 +1,36 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iiko/create/assemblyChart" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="refType" base="xs:string" variety="Atomic" length="36"/>
+	<objectType name="args">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="chart" type="d3p1:chartType"/>
+		<property name="overwrite" type="xs:boolean"/>
+	</objectType>
+	<objectType name="assemblyChartType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="eid" type="d3p1:refType" lowerBound="0" form="Attribute"/>
+	</objectType>
+	<objectType name="chartType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="eid" type="d3p1:refType" lowerBound="0" form="Attribute"/>
+		<property name="assembledAmount" type="xs:decimal"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="items" type="d3p1:itemsType"/>
+		<property name="writeoffStrategy" type="xs:string"/>
+		<property name="productSizeAssemblyStrategy" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="product" type="d3p1:refType"/>
+		<property name="dateFrom" type="xs:string"/>
+		<property name="dateTo" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="id" type="d3p1:refType"/>
+	</objectType>
+	<objectType name="iType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="eid" type="d3p1:refType" lowerBound="0" form="Attribute"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="assemblyChart" type="d3p1:assemblyChartType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="product" type="d3p1:refType"/>
+		<property name="amountIn" type="xs:decimal"/>
+		<property name="amountMiddle" type="xs:decimal"/>
+		<property name="amountOut" type="xs:decimal"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="id" type="d3p1:refType"/>
+	</objectType>
+	<objectType name="itemsType" ordered="false" sequenced="true">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/assemblyChart" name="i" type="d3p1:iType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="nameType">
+		<property name="customValue" type="xs:string"/>
+	</objectType>
+</package>

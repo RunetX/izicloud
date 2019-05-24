@@ -1,0 +1,20 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iiko/create/user" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="refType" base="xs:string" variety="Atomic" length="36"/>
+	<objectType name="args">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/user" name="user" type="d3p1:userType"/>
+	</objectType>
+	<objectType name="nameType">
+		<property name="customValue" type="xs:string"/>
+	</objectType>
+	<objectType name="userType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/user" name="eid" type="d3p1:refType" lowerBound="1" form="Attribute"/>
+		<property name="supplier" type="xs:boolean"/>
+		<property name="employee" type="xs:boolean"/>
+		<property name="client" type="xs:boolean"/>
+		<property name="pluginUser" type="xs:boolean"/>
+		<property name="system" type="xs:boolean"/>
+		<property name="supplierType" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/user" name="name" type="d3p1:nameType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/user" name="id" type="d3p1:refType"/>
+	</objectType>
+</package>

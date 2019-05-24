@@ -1,0 +1,19 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://izi.cloud/iiko/create/productGroup" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="refType" base="xs:string" variety="Atomic" length="36"/>
+	<objectType name="args">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/productGroup" name="productGroup" type="d3p1:productGroupType"/>
+	</objectType>
+	<objectType name="nameType">
+		<property name="customValue" type="xs:string"/>
+	</objectType>
+	<objectType name="productGroupType">
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/productGroup" name="eid" type="d3p1:refType" lowerBound="1" form="Attribute"/>
+		<property name="type" type="xs:string"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="num" type="xs:string"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/productGroup" name="parent" type="d3p1:refType" lowerBound="0"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/productGroup" name="accountingCategory" type="d3p1:refType" lowerBound="0"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/productGroup" name="name" type="d3p1:nameType"/>
+		<property xmlns:d3p1="https://izi.cloud/iiko/create/productGroup" name="id" type="d3p1:refType"/>
+	</objectType>
+</package>

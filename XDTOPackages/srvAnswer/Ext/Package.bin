@@ -1,0 +1,12 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://lemma.ru/iiko/reading/response" elementFormQualified="true" attributeFormQualified="false">
+	<objectType name="resultType">
+		<property name="returnValue" type="xs:anyType"/>
+		<property name="success" type="xs:boolean"/>
+		<property name="errorString" type="xs:anyType"/>
+		<property name="resultStatus" type="xs:string"/>
+		<property name="stackTrace" type="xs:anyType"/>
+		<property name="entitiesUpdate" type="xs:anyType"/>
+		<property name="licenseInfo" type="xs:anyType"/>
+		<property name="watchDogCheckResults" type="xs:anyType"/>
+	</objectType>
+</package>

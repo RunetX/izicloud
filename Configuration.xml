@@ -143,6 +143,19 @@
 			<CommonModule>IIKOСправочники</CommonModule>
 			<XDTOPackage>IIKOПакет</XDTOPackage>
 			<XDTOPackage>IIKOОбъект</XDTOPackage>
+			<XDTOPackage>ascAssemblyChart</XDTOPackage>
+			<XDTOPackage>docIncomingInvoice</XDTOPackage>
+			<XDTOPackage>docSalesDocument</XDTOPackage>
+			<XDTOPackage>docWriteoffDocument</XDTOPackage>
+			<XDTOPackage>entDish</XDTOPackage>
+			<XDTOPackage>entProduct</XDTOPackage>
+			<XDTOPackage>entProductGroup</XDTOPackage>
+			<XDTOPackage>entService</XDTOPackage>
+			<XDTOPackage>entStore</XDTOPackage>
+			<XDTOPackage>entSupplier</XDTOPackage>
+			<XDTOPackage>srvAnswer</XDTOPackage>
+			<XDTOPackage>srvNextNumber</XDTOPackage>
+			<XDTOPackage>srvSQLAnswer</XDTOPackage>
 			<HTTPService>v1</HTTPService>
 			<DataProcessor>ОбработкаЗаполнения</DataProcessor>
 			<InformationRegister>IIKOSQLЗапросы</InformationRegister>
